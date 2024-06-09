@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.06.08 a las 10:12:37 PM PET 
+// Generado el: 2024.06.08 a las 10:50:54 PM PET 
 //
 
 
@@ -15,14 +15,16 @@ import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlSchemaType;
 import jakarta.xml.bind.annotation.XmlType;
 
+import java.sql.Date;
+
 
 /**
- * <p>Clase Java para medicos complex type.
+ * <p>Clase Java para medicosP complex type.
  * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="medicos"&gt;
+ * &lt;complexType name="medicosP"&gt;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
@@ -39,13 +41,13 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "medicos", propOrder = {
+@XmlType(name = "medicosP", propOrder = {
     "idmedico",
     "nommedico",
     "apemedico",
     "fechnacmedico"
 })
-public class Medicos {
+public class MedicosP {
 
     protected int idmedico;
     @XmlElement(required = true)
@@ -54,7 +56,7 @@ public class Medicos {
     protected String apemedico;
     @XmlElement(required = true)
     @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar fechnacmedico;
+    protected Date fechnacmedico;
 
     /**
      * Obtiene el valor de la propiedad idmedico.
@@ -125,10 +127,10 @@ public class Medicos {
      * 
      * @return
      *     possible object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link String}
      *     
      */
-    public XMLGregorianCalendar getFechnacmedico() {
+    public Date getFechnacmedico() {
         return fechnacmedico;
     }
 
@@ -140,7 +142,7 @@ public class Medicos {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    public void setFechnacmedico(XMLGregorianCalendar value) {
+    public void setFechnacmedico(Date value) {
         this.fechnacmedico = value;
     }
 

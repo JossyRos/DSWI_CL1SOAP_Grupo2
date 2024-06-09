@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.06.08 a las 10:12:37 PM PET 
+// Generado el: 2024.06.08 a las 10:50:54 PM PET 
 //
 
 
@@ -27,7 +27,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="medicos" type="{http://www.cibertec.edu.pe/ws/objects}medicos" maxOccurs="unbounded"/&gt;
+ *         &lt;element name="medicos" type="{http://www.cibertec.edu.pe/ws/objects}medicosP" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -44,7 +44,7 @@ import jakarta.xml.bind.annotation.XmlType;
 public class GetMedicosResponse {
 
     @XmlElement(required = true)
-    protected List<Medicos> medicos;
+    protected List<MedicosP> medicos;
 
     /**
      * Gets the value of the medicos property.
@@ -64,13 +64,13 @@ public class GetMedicosResponse {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link Medicos }
+     * {@link MedicosP }
      * 
      * 
      */
-    public List<Medicos> getMedicos() {
+    public List<MedicosP> getMedicos() {
         if (medicos == null) {
-            medicos = new ArrayList<Medicos>();
+            medicos = new ArrayList<MedicosP>();
         }
         return this.medicos;
     }

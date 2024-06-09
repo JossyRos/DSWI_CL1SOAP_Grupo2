@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.06.08 a las 10:12:37 PM PET 
+// Generado el: 2024.06.08 a las 10:50:54 PM PET 
 //
 
 
@@ -25,7 +25,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="medico" type="{http://www.cibertec.edu.pe/ws/objects}medicos"/&gt;
+ *         &lt;element name="medico" type="{http://www.cibertec.edu.pe/ws/objects}medicosP"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -42,17 +42,17 @@ import jakarta.xml.bind.annotation.XmlType;
 public class PostMedicoRequest {
 
     @XmlElement(required = true)
-    protected Medicos medico;
+    protected MedicosP medico;
 
     /**
      * Obtiene el valor de la propiedad medico.
      * 
      * @return
      *     possible object is
-     *     {@link Medicos }
+     *     {@link MedicosP }
      *     
      */
-    public Medicos getMedico() {
+    public MedicosP getMedico() {
         return medico;
     }
 
@@ -61,10 +61,10 @@ public class PostMedicoRequest {
      * 
      * @param value
      *     allowed object is
-     *     {@link Medicos }
+     *     {@link MedicosP }
      *     
      */
-    public void setMedico(Medicos value) {
+    public void setMedico(MedicosP value) {
         this.medico = value;
     }
 

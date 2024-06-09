@@ -11,7 +11,7 @@
     <xs:element name="getMedicosResponse">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="medicos" type="tns:medicos"
+                <xs:element name="medicos" type="tns:medicosP"
                             maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
@@ -27,7 +27,7 @@
     <xs:element name="getMedicoResponse">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="medico" type="tns:medicos"/>
+                <xs:element name="medico" type="tns:medicosP"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -35,19 +35,19 @@
     <xs:element name="postMedicoRequest">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="medico" type="tns:medicos"/>
+                <xs:element name="medico" type="tns:medicosP"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
     <xs:element name="postMedicoResponse">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="medico" type="tns:medicos"/>
+                <xs:element name="medico" type="tns:medicosP"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
 
-    <xs:complexType name="medicos">
+    <xs:complexType name="medicosP">
         <xs:sequence>
             <xs:element name="idmedico" type="xs:int"/>
             <xs:element name="nommedico" type="xs:string"/>

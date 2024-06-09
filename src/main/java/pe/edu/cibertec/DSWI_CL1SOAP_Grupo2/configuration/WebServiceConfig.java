@@ -98,6 +98,20 @@ public class WebServiceConfig {
         return new SimpleXsdSchema(new ClassPathResource("xsd/cuadrado.xsd"));
     }
 
+    @Bean(name = "medico")
+    public DefaultWsdl11Definition medicoWsdl11Definition(XsdSchema medicoSchema){
+        DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
+        wsdl11Definition.setPortTypeName("MedicoPort");
+        wsdl11Definition.setLocationUri("/ws/medico");
+        wsdl11Definition.setTargetNamespace("http://www.cibertec.edu.pe/ws/objects");
+        wsdl11Definition.setSchema(medicoSchema);
+        return wsdl11Definition;
+    }
+    @Bean
+    public XsdSchema medicoSchema(){
+        return new SimpleXsdSchema(new ClassPathResource("xsd/medico.xsd"));
+    }
+
 
 
 }
