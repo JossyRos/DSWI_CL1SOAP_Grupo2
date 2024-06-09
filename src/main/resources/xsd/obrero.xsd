@@ -1,0 +1,30 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.cibertec.edu.pe/ws/objects"
+           targetNamespace="http://www.cibertec.edu.pe/ws/objects"
+           elementFormDefault="qualified">
+
+
+    <xs:element name="CalcularSalarioRequest">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="horasTrabajadas" type="xs:int"/>
+
+                <xs:element name="tarifaHoraRegular" type="xs:double"/>
+
+                <xs:element name="tarifaHoraExtra" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="CalcularSalarioResponse">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="salario" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
